@@ -23,6 +23,6 @@ const FolderOpenOutline = () => {
       />
     </svg>
   );
-}
+};
 
-export default FolderOpenOutline
+export default FolderOpenOutline;
