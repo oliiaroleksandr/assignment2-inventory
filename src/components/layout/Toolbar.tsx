@@ -12,7 +12,7 @@ import {
 
 const Toolbar = () => {
   return (
-    <div className="w-[281px] bg-[#F2F2F1] px-6 pb-8 pt-7">
+    <div className="basis-[17.56rem] bg-[#F2F2F1] px-6 pb-8 pt-7">
       <h2 className="mb-6 text-[1.25rem] font-bold leading-[1.2]">Hudson 8</h2>
       <Tabs defaultValue="project">
         <TabsList className="w-full">
