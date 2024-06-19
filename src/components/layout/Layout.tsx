@@ -5,13 +5,11 @@ import Header from "./Header";
 
 const Layout = ({ children }: PropsWithChildren) => {
   return (
-    <div className="flex min-h-screen items-stretch overflow-hidden">
+    <div className="min-h-screen overflow-hidden">
       <Sidebar />
       <Toolbar />
-      <div className="grow">
-        <Header />
-        <main>{children}</main>
-      </div>
+      <Header />
+      <main className="pb-11 pt-[6.875rem] pl-[24.5rem] pr-8">{children}</main>
     </div>
   );
 };
