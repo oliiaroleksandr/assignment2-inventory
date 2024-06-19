@@ -18,7 +18,7 @@ const ModeToggle = () => {
     <div className="flex items-center justify-between">
       <label
         htmlFor="mode-toggle"
-        className="font-semibold leading-[1.5] text-[#4F4F4F]"
+        className="font-semibold leading-[1.5] text-muted-foreground"
       >
         Mode
       </label>

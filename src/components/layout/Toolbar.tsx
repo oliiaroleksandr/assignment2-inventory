@@ -13,7 +13,7 @@ import ModeToggle from "./ModeToggle";
 
 const Toolbar = () => {
   return (
-    <div className="fixed left-20 flex flex-col top-0 h-full w-[17.56rem] bg-[#F2F2F1] px-6 pb-[2.125rem] pt-7">
+    <div className="bg-background3 fixed left-20 top-0 flex h-full w-[17.56rem] flex-col px-6 pb-[2.125rem] pt-7">
       <h2 className="mb-6 text-[1.25rem] font-bold leading-[1.2]">Hudson 8</h2>
       <Tabs defaultValue="project" className="grow">
         <TabsList className="w-full">
@@ -46,8 +46,8 @@ const Toolbar = () => {
                 </div>
               </AccordionTrigger>
               <AccordionContent>
-                <div className="ml-2.5 border-l-[1.5px] border-[#D4D6DB] pl-[0.8rem]">
-                  <div className="mb-1 bg-[#ECEDF0] px-3 py-2.5 font-medium leading-[1.5]">
+                <div className="ml-2.5 border-l-[1.5px] pl-[0.8rem]">
+                  <div className="mb-1 rounded-lg bg-secondary px-3 py-2.5 font-medium leading-[1.5]">
                     Units inventory
                   </div>
                   <div className="px-3 py-2.5">Allocations</div>

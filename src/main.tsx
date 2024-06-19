@@ -7,7 +7,7 @@ import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <ThemeProvider defaultTheme="light">
+    <ThemeProvider defaultTheme="system">
       <App />
     </ThemeProvider>
   </React.StrictMode>,
