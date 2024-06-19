@@ -1,9 +1,9 @@
 import { SunOutline } from "@/icons";
-import { useTheme } from "../ThemeProvider";
+import { useTheme } from "@/components/ThemeProvider";
 import { Switch } from "@/components/ui";
 import { MoonIcon } from "lucide-react";
 
-const ModeToggle = () => {
+const ModeSwitch = () => {
   const { setTheme, theme } = useTheme();
 
   const handleChackedChange = (isChecked: boolean) => {
@@ -33,4 +33,4 @@ const ModeToggle = () => {
   );
 };
 
-export default ModeToggle;
+export default ModeSwitch;
