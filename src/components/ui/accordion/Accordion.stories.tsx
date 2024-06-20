@@ -5,11 +5,17 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "./Accordion";
+import {
+  AccordionSingleProps,
+  AccordionMultipleProps,
+} from "@radix-ui/react-accordion";
 import { FolderOpenOutline, PackageOutline } from "@/icons";
 
-const AccordionPreview = () => {
+type Props = AccordionSingleProps | AccordionMultipleProps;
+
+const AccordionPreview = (props: Props) => {
   return (
-    <Accordion type="single" collapsible className="w-[233px]">
+    <Accordion {...props} className="w-[233px]">
       <AccordionItem value="item-1" className="mb-6">
         <AccordionTrigger>
           <div className="flex items-center gap-3">
@@ -51,4 +57,22 @@ export default meta;
 
 type Story = StoryObj<typeof AccordionPreview>;
 
-export const Default: Story = {};
+export const Single: Story = {
+  args: {
+    type: "single",
+    collapsible: false,
+    defaultValue: "item-1",
+  },
+};
+
+export const Multiple: Story = {
+  args: {
+    type: "multiple",
+  },
+};
+
+export const Collapsible: Story = {
+  args: {
+    collapsible: true,
+  },
+};
