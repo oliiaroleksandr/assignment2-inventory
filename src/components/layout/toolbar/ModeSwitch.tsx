@@ -1,7 +1,6 @@
-import { SunOutline } from "@/icons";
+import { Moon, SunOutline } from "@/icons";
 import { useTheme } from "@/components/ThemeProvider";
 import { Switch } from "@/components/ui";
-import { MoonIcon } from "lucide-react";
 
 const ModeSwitch = () => {
   const { setTheme, theme } = useTheme();
@@ -18,7 +17,7 @@ const ModeSwitch = () => {
     <div className="flex items-center justify-between">
       <label
         htmlFor="mode-toggle"
-        className="font-semibold leading-[1.5] text-muted-foreground"
+        className="cursor-pointer font-semibold leading-[1.5] text-muted-foreground"
       >
         Mode
       </label>
@@ -27,7 +26,7 @@ const ModeSwitch = () => {
         checked={theme === "light"}
         onCheckedChange={handleChackedChange}
       >
-        {theme === "light" ? <SunOutline /> : <MoonIcon size={17} />}
+        {theme === "light" ? <SunOutline /> : <Moon />}
       </Switch>
     </div>
   );

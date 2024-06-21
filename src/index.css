@@ -58,3 +58,9 @@
     @apply bg-background1 text-foreground;
   }
 }
+
+.transition-padding {
+  transition-property: padding;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}

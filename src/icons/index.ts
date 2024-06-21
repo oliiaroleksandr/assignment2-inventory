@@ -6,3 +6,7 @@ export { default as SignOutOutline } from "./SignOutOutline";
 export { default as Buildings } from "./Buildings";
 export { default as HardDrivesOutline } from "./HardDrivesOutline";
 export { default as SquaresFourOutline } from "./SquaresFourOutline";
+export { default as PanelRightClose } from "./PanelRightClose";
+export { default as PanelRightOpen } from "./PanelRightOpen";
+export { default as Check } from "./Check";
+export { default as Moon } from "./Moon";
